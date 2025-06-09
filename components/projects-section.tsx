@@ -10,7 +10,7 @@ const projects = [
   {
     title: "anniversaire Platforme",
     descKey: "projects.foodfinder.desc",
-    image: "/joyeux.png",
+    image: "/annive.jpg",
     tags: ["Nextjs", "TypeScript ", "Supabase"],
     github: "https://github.com/AngeGabriel-rgb/anniv_front.git",
     live: "https://anniv-front-pi.vercel.app/",
