@@ -1,84 +1,66 @@
 "use client"
 
-import { useState } from "react"
-import Link from "next/link"
+import { Globe, Moon, Sun } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { ThemeToggle } from "@/components/theme-toggle"
-import { Menu, X, Github, Star } from "lucide-react"
+import { useTheme } from "@/contexts/theme-context"
+import { useLanguage } from "@/contexts/language-context"
 
-export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
+export function Header() {
+  const { theme, toggleTheme } = useTheme()
+  const { language, toggleLanguage, t } = useLanguage()
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 glass border-b">
-      <div className="container flex h-16 items-center justify-between px-4 md:px-6">
-        <Link href="/" className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg gradient-bg flex items-center justify-center">
-            <span className="text-white font-bold text-lg">P</span>
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#EAE8F3]/90 backdrop-blur-sm border-b border-[#A77B9E]/20 transition-colors">
+      <div className="container mx-auto px-6 py-4 flex items-center justify-between">
+        <button
+          onClick={() => window.location.reload()}
+          className="flex items-center space-x-2 cursor-pointer hover:scale-105 transition-transform duration-200"
+        >
+          <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
+            <span className="text-white font-bold text-sm">AG</span>
           </div>
-          <span className="text-xl font-bold">Portfolio</span>
-        </Link>
+          <span className="font-bold text-black"> Ange Gabriel </span>
+        </button>
 
-        <nav className="hidden md:flex gap-8">
-          <Link href="/" className="text-sm font-medium nav-link hover:text-primary transition-colors">
-            Accueil
-          </Link>
-          <Link href="#projects" className="text-sm font-medium nav-link hover:text-primary transition-colors">
-            Projets
-          </Link>
-          <Link href="#contact" className="text-sm font-medium nav-link hover:text-primary transition-colors">
-            Contact
-          </Link>
+        <nav className="hidden md:flex items-center space-x-8">
+          <a href="#home" className="text-[#3A2A4E] hover:text-[#A77B9E] transition-all duration-300 relative group">
+            {t("nav.home")}
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#A77B9E] transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          <a
+            href="#projects"
+            className="text-[#3A2A4E] hover:text-[#A77B9E] transition-all duration-300 relative group"
+          >
+            {t("nav.projects")}
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#A77B9E] transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          <a href="#about" className="text-[#3A2A4E] hover:text-[#A77B9E] transition-all duration-300 relative group">
+            {t("nav.about")}
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#A77B9E] transition-all duration-300 group-hover:w-full"></span>
+          </a>
         </nav>
 
-        <div className="hidden md:flex items-center gap-4">
-          <Button variant="ghost" size="sm" className="btn-github-animation">
-            <Github className="h-4 w-4 mr-2" />
-            <Star className="h-4 w-4 mr-1" />
-            GitHub
+        <div className="flex items-center space-x-4">
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={toggleLanguage}
+            className="text-[#3A2A4E] hover:text-[#A77B9E] hover:bg-[#A77B9E]/10 transition-all duration-300"
+          >
+            <Globe className="w-4 h-4 mr-1" />
+            {language.toUpperCase()}
           </Button>
-          <ThemeToggle />
-          <Button size="sm" className="btn-github-animation gradient-bg text-white border-0">
-            Me contacter
-          </Button>
-        </div>
 
-        <div className="flex items-center gap-2 md:hidden">
-          <ThemeToggle />
-          <Button variant="ghost" size="icon" className="md:hidden" onClick={toggleMenu}>
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={toggleTheme}
+            className="text-[#3A2A4E] hover:text-[#A77B9E] hover:bg-[#A77B9E]/10 transition-all duration-300"
+          >
+            {theme === "dark" ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
           </Button>
         </div>
       </div>
-
-      {isMenuOpen && (
-        <div className="md:hidden glass border-t">
-          <nav className="flex flex-col space-y-4 p-4">
-            <Link href="/" className="text-sm font-medium nav-link hover:text-primary" onClick={toggleMenu}>
-              Accueil
-            </Link>
-            <Link href="#projects" className="text-sm font-medium nav-link hover:text-primary" onClick={toggleMenu}>
-              Projets
-            </Link>
-            <Link href="#contact" className="text-sm font-medium nav-link hover:text-primary" onClick={toggleMenu}>
-              Contact
-            </Link>
-            <div className="flex gap-4 pt-2">
-              <Button variant="outline" size="sm" className="btn-github-animation">
-                <Github className="h-4 w-4 mr-2" />
-                GitHub
-              </Button>
-              <Button size="sm" className="btn-github-animation gradient-bg text-white border-0">
-                Contact
-              </Button>
-            </div>
-          </nav>
-        </div>
-      )}
     </header>
   )
 }

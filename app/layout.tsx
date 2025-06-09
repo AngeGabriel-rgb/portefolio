@@ -1,15 +1,15 @@
 import type React from "react"
-import "@/app/globals.css"
+import type { Metadata } from "next"
 import { Inter } from "next/font/google"
-import { ThemeProvider } from "@/components/theme-provider"
-import Header from "@/components/header"
+import "./globals.css"
+import { ThemeProvider } from "@/contexts/theme-context"
+import { LanguageProvider } from "@/contexts/language-context"
 
 const inter = Inter({ subsets: ["latin"] })
 
-export const metadata = {
-  title: "Portfolio Personnel",
-  description: "Portfolio personnel créé avec Next.js et Tailwind CSS",
-    generator: 'v0.dev'
+export const metadata: Metadata = {
+  title: "KOUEVIDJIN Ange Gabriel - Portfolio",
+  description: "Développeur Web",
 }
 
 export default function RootLayout({
@@ -18,11 +18,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="fr" suppressHydrationWarning>
+    <html lang="fr">
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="light">
-          <Header />
-          {children}
+        <ThemeProvider>
+          <LanguageProvider>{children}</LanguageProvider>
         </ThemeProvider>
       </body>
     </html>
