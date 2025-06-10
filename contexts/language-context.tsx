@@ -21,7 +21,7 @@ const translations = {
     // Hero
     "hero.title.developer": "DÉVELOPPEUR",
     "hero.title.designer": "ET DESIGNER",
-    "hero.title.web": "W/EB",
+    "hero.title.web": "WEB",
     "hero.listening": "EN TRAIN D'ÉCOUTER",
     "hero.music": "Lofi Hip Hop",
 
@@ -75,7 +75,7 @@ const translations = {
     // Hero
     "hero.title.developer": "DEVELOPER",
     "hero.title.designer": "AND DESIGNER",
-    "hero.title.web": "W/EB",
+    "hero.title.web": "WEB",
     "hero.listening": "NOW LISTENING",
     "hero.music": "Lofi Hip Hop",
 
