@@ -8,7 +8,7 @@ import { AnimatedSection } from "@/components/animated-section"
 
 const projects = [
   {
-    title: "anniversaire Platforme",
+    title: "Anniversaire Platforme",
     descKey: "projects.foodfinder.desc",
     image: "/annive.jpg",
     tags: ["Nextjs", "TypeScript ", "Supabase"],
@@ -24,11 +24,27 @@ const projects = [
     live: "#",
   },
   {
-    title: "API Anniversaire",
+    title: "Anniversaire",
     descKey: "projects.outing.desc",
     image: "/api.jpg",
     tags: ["Node.js", "Prisma", "Express"],
     github: "https://github.com/AngeGabriel-rgb/anniv_back.git",
+    live: null,
+  },
+   {
+    title: "Pizza casa",
+    descKey: "projects.pizzazasa.desc",
+    image: "/hero3.jpg",
+    tags: ["Nextjs", "TypeScript ", "Supabase"],
+    github: "https://github.com/DhenneTSANGA/Pizza-casa.git",
+    live: "https://pizza-casa-one.vercel.app/",
+  },
+  {
+    title: "Liste de présence",
+    descKey: "projects.listepresence.desc",
+    image: "/dev.png",
+    tags: ["Node.js", "Prisma", "Express"],
+    github: "https://github.com/AngeGabriel-rgb/liste_presence",
     live: null,
   },
 ]

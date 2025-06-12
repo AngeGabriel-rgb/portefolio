@@ -123,6 +123,34 @@ html {
   }
 }
 
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animations de défilement horizontal RAPIDES */
+@keyframes scroll-left-to-right-fast {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes scroll-right-to-left-fast {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 .animate-float-fast {
   animation: float-fast 2s ease-in-out infinite;
 }
@@ -134,6 +162,19 @@ html {
 
 .animate-spin-fast {
   animation: spin-fast 8s linear infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+/* Défilement rapide et fluide */
+.animate-scroll-left-to-right-fast {
+  animation: scroll-left-to-right-fast 15s linear infinite;
+}
+
+.animate-scroll-right-to-left-fast {
+  animation: scroll-right-to-left-fast 12s linear infinite;
 }
 
 /* Animation pour les liens de navigation */
