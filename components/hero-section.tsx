@@ -57,7 +57,7 @@ export function HeroSection() {
                       <TypingText text="DÉVELOPPEUR" speed={60} />
                     </span>
                     <span className="block text-[#A77B9E]">
-                      <TypingText text="WEB" speed={60} />
+                      <TypingText text="BACK-END" speed={60} />
                     </span>
                   </>
                 ) : (

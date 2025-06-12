@@ -19,11 +19,11 @@ const translations = {
     "nav.contact": "Contact",
 
     // Hero
-    "hero.title.developer": "DÉVELOPPEUR",
-    "hero.title.designer": "ET DESIGNER",
-    "hero.title.web": "WEB",
+    "hero.title.name": "ANGE GABRIEL",
+    "hero.title.develop": "DEVELOPPEUR",
+    "hero.title.web": "BACK-END",
     "hero.listening": "EN TRAIN D'ÉCOUTER",
-    "hero.music": "Lofi Hip Hop",
+    "hero.music": "Canon In D",
 
     // Projects
     "projects.title": "PROJETS",
@@ -75,11 +75,11 @@ const translations = {
     "nav.contact": "Contact",
 
     // Hero
-    "hero.title.developer": "DEVELOPER",
-    "hero.title.designer": "AND DESIGNER",
-    "hero.title.web": "WEB",
+    "hero.title.name": "ANGE GABRIEL",
+    "hero.title.develop": "DEVELOPER",
+    "hero.title.web": "BACK-END",
     "hero.listening": "NOW LISTENING",
-    "hero.music": "Lofi Hip Hop",
+    "hero.music": "Canon In D ",
 
    // Projects
 "projects.title": "PROJECTS",

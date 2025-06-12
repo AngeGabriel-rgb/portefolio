@@ -7,8 +7,7 @@ const experiences = [
   {
     title: "Développement d'API et Gestion de Base de Données",
     description:
-      "Développement d'applications web complètes avec Next.js, TypeScript et Supabase. Création d'APIs robustes et d'interfaces utilisateur modernes.",
-  },
+"Gère des APIs permettant la communication entre les applications et les bases de données. Il conçoit des endpoints conformes aux standards, gère les schémas de bases de données, et assure la sécurité via des systèmes d'authentification."  },
   {
     title: "Création de Serveurs Web avec Node.js et Express",
     description:
