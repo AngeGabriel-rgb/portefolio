@@ -44,15 +44,26 @@ const backendSkills = [
     name: "E-billing",
     icon: "💰",
   },
-  { name: "TypeScript",
+  { 
+    name: "TypeScript",
     icon: "🔷",
- },
-      { name: "React",
-      icon: "⚛️",
-     }, 
-  { name: "Next.js",
-     icon: "▲",
-   },
+  },
+  { 
+    name: "React",
+    icon: "⚛️",
+  }, 
+  { 
+    name: "Next.js",
+    icon: "▲",
+  },
+  {
+    name: "Git",
+    icon: "🔗",
+  },
+  {
+    name: "GitHub",
+    icon: "🐱",
+  },
 ]
 
 export function TechnicalSkillsSection() {

@@ -13,7 +13,7 @@ const projects = [
     image: "/annive.jpg",
     tags: ["Nextjs", "TypeScript ", "Supabase"],
     github: "https://github.com/AngeGabriel-rgb/anniv_front.git",
-    live: "https://anniv-front-pi.vercel.app/",
+    live: "https://morose.netlify.app/",
   },
   {
     title: "Plateforme E-commerce",

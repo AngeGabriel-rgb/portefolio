@@ -6,7 +6,7 @@ import { useTheme } from "@/contexts/theme-context"
 import { useLanguage } from "@/contexts/language-context"
 
 export function Header() {
-  const { theme, toggleTheme } = useTheme()
+
   const { language, toggleLanguage, t } = useLanguage()
 
   return (
@@ -49,15 +49,6 @@ export function Header() {
           >
             <Globe className="w-4 h-4 mr-1" />
             {language.toUpperCase()}
-          </Button>
-
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={toggleTheme}
-            className="text-[#3A2A4E] hover:text-[#A77B9E] hover:bg-[#A77B9E]/10 transition-all duration-300"
-          >
-            {theme === "dark" ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
           </Button>
         </div>
       </div>
