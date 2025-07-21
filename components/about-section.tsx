@@ -49,7 +49,7 @@ export function AboutSection() {
               <div className="relative">
                 <div className="w-80 h-80 mx-auto relative overflow-hidden rounded-full group">
                   <img
-                    src="ange.jpg"
+                    src="l.jpg"
                     alt="Ange Gabriel - Développeur Web"
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />

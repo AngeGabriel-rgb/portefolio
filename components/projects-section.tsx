@@ -8,23 +8,23 @@ import { AnimatedSection } from "@/components/animated-section"
 
 const projects = [
   {
-    title: "Anniversaire Platforme",
+    title: "Idea",
     descKey: "projects.foodfinder.desc",
     image: "/annive.jpg",
     tags: ["Nextjs", "TypeScript ", "Supabase"],
     github: "https://github.com/AngeGabriel-rgb/anniv_front.git",
-    live: "https://morose.netlify.app/",
+    live: "https://ideabirthday.netlify.app/",
   },
   {
-    title: "Plateforme E-commerce",
+    title: "OloStore",
     descKey: "projects.mobile.desc",
     image: "/Web.webp",
-    tags: ["Nextjs ", "TypeScript"],
-    github: "https://github.com/AngeGabriel-rgb/plateforme-e-commerce.git",
+    tags: ["nodejs ", "Express"],
+    github: "https://github.com/AngeGabriel-rgb/plateforme-e-commerce-back.git",
     live: "#",
   },
   {
-    title: "Anniversaire",
+    title: "Backend Idea",
     descKey: "projects.outing.desc",
     image: "/api.jpg",
     tags: ["Node.js", "Prisma", "Express"],
