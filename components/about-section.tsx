@@ -1,6 +1,6 @@
 "use client"
 
-import { Github, Twitter, Linkedin, Mail, Music } from "lucide-react"
+import { Github,  Linkedin, Mail, Music } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 import { AnimatedSection } from "@/components/animated-section"
 
@@ -31,7 +31,7 @@ export function AboutSection() {
                 <p className="text-[#EAE8F3] mb-8 leading-relaxed opacity-90">{t("about.desc3")}</p>
 
                 <div className="flex space-x-4">
-                  {[Github, Twitter, Linkedin, Mail, Music].map((Icon, index) => (
+                  {[Github, Linkedin, Mail, Music].map((Icon, index) => (
                     <AnimatedSection key={index} animation="fade-up" delay={300 + index * 50}>
                       <a
                         href=""
@@ -49,7 +49,7 @@ export function AboutSection() {
               <div className="relative">
                 <div className="w-80 h-80 mx-auto relative overflow-hidden rounded-full group">
                   <img
-                    src="l.jpg"
+                    src="/moi.png"
                     alt="Ange Gabriel - Développeur Web"
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />

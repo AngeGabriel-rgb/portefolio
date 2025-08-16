@@ -15,6 +15,14 @@ const projects = [
     github: "https://github.com/AngeGabriel-rgb/anniv_front.git",
     live: "https://ideabirthday.netlify.app/",
   },
+    {
+    title: "KRESHOP",
+    descKey: "projects.kreshop.desc",
+    image: "/kreshop.jpg",
+    tags: ["Nextjs", "TypeScript ", "Supabase"],
+    github: "https://github.com/AngeGabriel-rgb/kreshop.git",
+    live: "https://kreshop.netlify.app/",
+  },
   {
     title: "OloStore",
     descKey: "projects.mobile.desc",
@@ -113,10 +121,10 @@ export function ProjectsSection() {
                           </div>
                           <div className="flex space-x-4 relative z-10">
                             <Button
-                              variant="outline"
+                              variant={null}
                               size="sm"
                               asChild
-                              className="border-[#EAE8F3] text-[#EAE8F3] hover:bg-[#EAE8F3] hover:text-[#2C2F33] transition-all duration-200 hover:scale-105"
+                              className="border-[#2C2F33] text-[#EAE8F3] hover:bg-[#EAE8F3] hover:text-[#2C2F33] transition-all duration-200 hover:scale-105"
                             >
                               <a href={project.github} target="_blank" rel="noopener noreferrer">
                                 <Github className="w-4 h-4 mr-2" />
