@@ -21,7 +21,7 @@ const projects = [
     image: "/kreshop.jpg",
     tags: ["Nextjs", "TypeScript ", "Supabase"],
     github: "https://github.com/AngeGabriel-rgb/kreshop.git",
-    live: "https://kreshop.netlify.app/",
+    live: "https://kre-shop.netlify.app/",
   },
   {
     title: "OloStore",
