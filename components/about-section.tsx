@@ -47,11 +47,11 @@ export function AboutSection() {
 
             <AnimatedSection animation="slide-left" delay={300}>
               <div className="relative">
-                <div className="w-80 h-80 mx-auto relative overflow-hidden rounded-full group">
+                <div className="w-80 h-70 mx-auto relative overflow-hidden rounded-full group">
                   <img
-                    src="/moi.png"
+                    src="/angelo.png"
                     alt="Ange Gabriel - Développeur Web"
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    className="w-full h-full object-cover transition-transform duration-4000 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-br from-[#A77B9E]/20 to-[#3A2A4E]/20 rounded-full transition-opacity duration-300 group-hover:opacity-50"></div>
                 </div>
