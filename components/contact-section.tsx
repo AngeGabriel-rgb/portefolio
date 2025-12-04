@@ -23,7 +23,7 @@ export function ContactSection() {
 
   const EMAILJS_CONFIG = {
     serviceId: "service_mu1960v",
-    templateId: "template_qe67fhm", 
+    templateId: "template_ytjj54c", 
     publicKey: "gLE1xvpjusIK1EdsF",
     destinationEmail: "gabruielange748@gmail.com",
   }
